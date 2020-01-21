@@ -1,0 +1,13 @@
+# Notes
+
+	
+
+# Scenes
+
+	Scene 1 = Main Menu
+	Scene 2 = Overworld
+	Scene 3 = Test Scene
+
+# Todo
+
+	Things
