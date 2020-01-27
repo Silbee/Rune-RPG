@@ -42,7 +42,9 @@ public class DialogueHandler : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
-        
+
+        DontDestroyOnLoad(gameObject);
+
         nameText = GameObject.Find("NameText").GetComponent<TMP_Text>();
         dialogueText = GameObject.Find("DialogueText").GetComponent<TMP_Text>();
         dialogueSound = GetComponent<AudioSource>();
@@ -54,7 +56,6 @@ public class DialogueHandler : MonoBehaviour
         if (!dialogueIsPlaying)
         {
             StartCoroutine(DialogueRoutine(dialogue));
-            Debug.Log("Started dialogue with: " + dialogue.name);
         }
     }
 
@@ -65,12 +66,10 @@ public class DialogueHandler : MonoBehaviour
             if (skipDialogue)
             {
                 continueDialogue = true;
-                Debug.Log("Continued dialogue");
             }
             else
             {
                 skipDialogue = true;
-                Debug.Log("Skipped dialogue");
             }
         }
     }
@@ -120,12 +119,10 @@ public class DialogueHandler : MonoBehaviour
             while (!continueDialogue) // Waits for the player to interact in order to continue the dialogue
             {
                 yield return null;
-                Debug.Log("Waiting to continue dialogue...");
             }
         }
 
         dialogueIsPlaying = false;
         dialogueCanvas.enabled = false;
-        Debug.Log("Ended dialogue with: " + dialogue.name);
     }
 }

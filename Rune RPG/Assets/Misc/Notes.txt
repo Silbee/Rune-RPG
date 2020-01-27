@@ -1,13 +1,9 @@
 # Notes
 
-	
+	Use a 'ß' in a piece of dialogue to make it act as a pause
 
 # Scenes
 
-	Scene 1 = Main Menu
-	Scene 2 = Overworld
-	Scene 3 = Test Scene
-
-# Todo
-
-	Things
+	Scene 0 = Main Menu
+	Scene 1 = Overworld
+	Scene 2 = Test Scene

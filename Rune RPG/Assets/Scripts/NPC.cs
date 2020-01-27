@@ -4,8 +4,5 @@ public class NPC : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    void Start()
-    {
-        DialogueHandler.Instance.PlayDialogue(dialogue);
-    }
+    void Start() => DialogueHandler.Instance.PlayDialogue(dialogue);
 }

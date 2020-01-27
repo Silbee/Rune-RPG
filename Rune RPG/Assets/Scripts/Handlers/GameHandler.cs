@@ -21,13 +21,15 @@ public class GameHandler : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
-        
+
+        DontDestroyOnLoad(gameObject);
+
         Application.targetFrameRate = maxFramerate; // Without this my laptop would turn into an Airbnb jet motor
     }
 
     public void GoToMainMenu(InputAction.CallbackContext context)
     {
-        if (context.performed && SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(1))
-            SceneManager.LoadSceneAsync(1);
+        if (context.performed && SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(0))
+            SceneManager.LoadSceneAsync(0);
     }
 }
