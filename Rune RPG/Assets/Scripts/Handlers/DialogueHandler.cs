@@ -18,9 +18,9 @@ public class DialogueHandler : MonoBehaviour
     public static DialogueHandler Instance { get; private set; } // Make this class accessible from any script without all fields and functions having to be static
 
     public bool dialogueIsPlaying { get; private set; }
-    [SerializeField] bool skipDialogue, continueDialogue;
+    [SerializeField] bool skipDialogue, continueDialogue, reverseFade;
     
-    TMP_Text nameText, dialogueText;
+    TMP_Text nameText, dialogueText, spaceText;
     AudioSource dialogueSound;
     Canvas dialogueCanvas;
 
@@ -47,6 +47,8 @@ public class DialogueHandler : MonoBehaviour
 
         nameText = GameObject.Find("NameText").GetComponent<TMP_Text>();
         dialogueText = GameObject.Find("DialogueText").GetComponent<TMP_Text>();
+        spaceText = GameObject.Find("SpaceText").GetComponent<TMP_Text>();
+
         dialogueSound = GetComponent<AudioSource>();
         dialogueCanvas = GetComponentInChildren<Canvas>();
     }
@@ -87,7 +89,9 @@ public class DialogueHandler : MonoBehaviour
         {
             skipDialogue = false;
             continueDialogue = false;
+            reverseFade = false;
             dialogueText.text = string.Empty; // string.Empty gang
+            spaceText.alpha = 0;
 
             foreach (char letter in dialogue.text[i]) // Loop trough each character of the provided dialogue
             {
@@ -118,6 +122,13 @@ public class DialogueHandler : MonoBehaviour
 
             while (!continueDialogue) // Waits for the player to interact in order to continue the dialogue
             {
+                spaceText.alpha += Time.deltaTime / 2 * (reverseFade ? 1 : -1); // Makes text fade in and out
+
+                if (spaceText.alpha <= 0)
+                    reverseFade = true;
+                else if (spaceText.alpha >= 1)
+                    reverseFade = false;
+
                 yield return null;
             }
         }
