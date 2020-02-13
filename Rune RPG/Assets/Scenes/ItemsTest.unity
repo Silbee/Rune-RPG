@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3673,72 +3673,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1813837336}
     m_Modifications:
-    - target: {fileID: 8041673842222417856, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417856, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8b0351f4083697942abc4178af3fb45e,
-        type: 3}
-    - target: {fileID: 8041673842222417856, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.49292454
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.49292454
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_ColorMultiplier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.r
-      value: 0.8679245
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.g
-      value: 0.8679245
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673842222417886, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.b
-      value: 0.8679245
-      objectReference: {fileID: 0}
     - target: {fileID: 8041673842795462337, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
         type: 3}
       propertyPath: m_Name
@@ -3848,11 +3782,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041673843183873881, guid: 5783c9ab5ee3c2846a5e8f2ee4460691,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5783c9ab5ee3c2846a5e8f2ee4460691, type: 3}
