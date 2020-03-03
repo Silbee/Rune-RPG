@@ -573,9 +573,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384473818}
+  - component: {fileID: 1384473819}
   - component: {fileID: 1384473817}
   - component: {fileID: 1384473820}
-  - component: {fileID: 1384473819}
   - component: {fileID: 1384473821}
   - component: {fileID: 1384473822}
   m_Layer: 0
@@ -624,7 +624,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1940856387101273423, guid: 9013715fd40951448b948664720d167f,
+  m_Sprite: {fileID: 3457012895143951224, guid: 69835b45fbc8f1246b578ee8e5f54fe0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -662,6 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da22662900971d48b18409ba23cdd04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 6
 --- !u!114 &1384473820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +750,7 @@ Animator:
   m_GameObject: {fileID: 1384473816}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46b8f64e9c72ca9419332290e5a08c5f, type: 2}
+  m_Controller: {fileID: 9100000, guid: e57c196c989ded74a899da2706ac8b77, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
