@@ -663,6 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 6
+  animator: {fileID: 1384473822}
 --- !u!114 &1384473820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +711,7 @@ MonoBehaviour:
     m_ActionId: 8d7ce531-f685-4a41-9847-03eb375226b8
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard and Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
